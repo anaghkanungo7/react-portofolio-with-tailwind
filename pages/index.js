@@ -3,23 +3,26 @@ import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
+  AiFillMessage,
 } from "react-icons/ai";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { useState } from "react";
+import avatar from "../public/avatar.png";
 import deved from "../public/dev-ed-wave.png";
 import code from "../public/code.png";
 import design from "../public/design.png";
-import consulting from "../public/consulting.png";
-import Image from "next/image";
-import web1 from "../public/web1.png";
-import web2 from "../public/web2.png";
-import web3 from "../public/web3.png";
-import web4 from "../public/web4.png";
+// import consulting from "../public/consulting.png";
+import gear from "../public/gear.png";
+import Image from "next/Image";
+import web1 from "../public/web1.jpg";
+import web2 from "../public/web2.jpg";
+import web3 from "../public/web3.jpg";
+import web4 from "../public/web4.jpg";
 import web5 from "../public/web5.png";
-import web6 from "../public/web6.png";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
@@ -31,7 +34,9 @@ export default function Home() {
       <main className=" bg-white px-10 dark:bg-gray-900 md:px-20 lg:px-40">
         <section className="min-h-screen">
           <nav className="py-10 mb-12 flex justify-between dark:text-white">
-            <h1 className="font-burtons text-xl">developedbyed</h1>
+            <h1 className="font-burtons text-xl">
+              Hi, I&apos;m Anagh Kanungo.
+            </h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill
@@ -39,10 +44,20 @@ export default function Home() {
                   className=" cursor-pointer text-2xl"
                 />
               </li>
+
+              <li>
+                <a
+                  className=" text-black px-4 py-2 border-none rounded-md ml-8 dark:text-white"
+                  href="https://docs.anagh.dev/"
+                >
+                  Technical Docs
+                </a>
+              </li>
+
               <li>
                 <a
                   className="bg-gradient-to-r from-cyan-500 text- to-teal-500 text-white px-4 py-2 border-none rounded-md ml-8"
-                  href="#"
+                  href="https://drive.google.com/file/d/1449xsVSQthc3rSGrol0TyHg5WCrPvUcf/view?usp=share_link"
                 >
                   Resume
                 </a>
@@ -51,106 +66,99 @@ export default function Home() {
           </nav>
           <div className="text-center p-10 py-10">
             <h2 className="text-5xl py-2 text-teal-600 font-medium dark:text-teal-400 md:text-6xl">
-              Dimitri Marco
+              Anagh Kanungo
             </h2>
             <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
-              Developer and designer.
+              Software Engineer and Web Designer.
             </h3>
             <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-xl mx-auto md:text-xl">
-              Freelancer providing services for programming and design content
-              needs. Join me down below and let's get cracking!
+              NYU student majoring in CS and minoring in Finance. Aspiring tech
+              entrepreneur interested in all things technology, machine learning
+              and finance. Happy to meet up for a coffee and chat, reach out to
+              me below!
             </p>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600 dark:text-gray-400">
-              <AiFillTwitterCircle />
-              <AiFillLinkedin />
-              <AiFillYoutube />
+              <AiFillGithub href="https://www.github.com/anaghkanungo7" />
+              <AiFillLinkedin href="https://www.linkedin.com/in/anaghkanungo" />
+              <AiFillMessage href="mailto:anaghkanungo7@gmail.com" />
             </div>
             <div className="mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 relative overflow-hidden mt-20 md:h-96 md:w-96">
-              <Image src={deved} layout="fill" objectFit="cover" />
+              <Image alt="" src={avatar} layout="fill" objectFit="cover" />
             </div>
           </div>
         </section>
         <section>
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Services I offer</h3>
+            <h2 className="text-3xl py-1 dark:text-white ">
+              Fields of Interest
+            </h2>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Since the beginning of my journey as a computer scientist and
+              software engineer, my interests have evolved as I explored more of
+              the field. Here are a few of the fields that I am passionate
+              about:
             </p>
           </div>
           <div className="lg:flex gap-10">
             <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white flex-1">
-              <Image src={design} width={100} height={100} />
+              <Image alt="" src={design} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2  ">
-                Beautiful Designs
+                Full-stack Web Development
               </h3>
               <p className="py-2">
-                Creating elegant designs suited for your needs following core
-                design theory.
+                Creating websites with great design and a performant backend
+                using the latest technologies.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Tools I Use</h4>
+              <p className="text-gray-800 py-1">JavaScript</p>
+              <p className="text-gray-800 py-1">React</p>
+              <p className="text-gray-800 py-1">Tailwind</p>
+              <p className="text-gray-800 py-1">Material UI</p>
+              <p className="text-gray-800 py-1">PHP</p>
+              <p className="text-gray-800 py-1">NodeJS</p>
+              <p className="text-gray-800 py-1">MongoDB</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={code} width={100} height={100} />
+              <Image alt="" src={code} width={100} height={100} />
               <h3 className="text-lg font-medium pt-8 pb-2 ">
-                Code your dream project
+                Software Engineering
               </h3>
               <p className="py-2">
-                Do you have an idea for your next great website? Let's make it a
-                reality.
+                Using core programming design patterns and techniques to create
+                customer-facing products and services.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Languages I use</h4>
+              <p className="text-gray-800 py-1">Python</p>
+              <p className="text-gray-800 py-1">C++</p>
+              <p className="text-gray-800 py-1">Java</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white flex-1">
-              <Image src={consulting} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2 ">Consulting</h3>
+              <Image alt="" src={gear} width={100} height={100} />
+              <h3 className="text-lg font-medium pt-8 pb-2 ">Data Science</h3>
               <p className="py-2">
-                Are you interested in feedback for your current project? I can
-                give you tips and tricks to level it up.
+                Utilizing machine learning techniques to create models that can
+                solve real-world problems.
               </p>
-              <h4 className="py-4 text-teal-600">Design Tools I Use</h4>
-              <p className="text-gray-800 py-1">Photoshop</p>
-              <p className="text-gray-800 py-1">Illustrator</p>
-              <p className="text-gray-800 py-1">Figma</p>
-              <p className="text-gray-800 py-1">Indesign</p>
+              <h4 className="py-4 text-teal-600">Tools I Use</h4>
+              <p className="text-gray-800 py-1">NumPy</p>
+              <p className="text-gray-800 py-1">Pandas</p>
+              <p className="text-gray-800 py-1">Pytorch</p>
+              <p className="text-gray-800 py-1">Tensorflow</p>
             </div>
           </div>
         </section>
         <section className="py-10">
           <div>
-            <h3 className="text-3xl py-1 dark:text-white ">Portofolio</h3>
+            <h2 className="text-3xl py-1 dark:text-white ">Portfolio</h2>
             <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              Since the beginning of my journey as a freelance designer and
-              developer, I've done remote work for
-              <span className="text-teal-500"> agencies </span>
-              consulted for <span className="text-teal-500">startups </span>
-              and collaborated with talanted people to create digital products
-              for both business and consumer use.
-            </p>
-            <p className="text-md py-2 leading-8 text-gray-800 dark:text-gray-200">
-              I offer from a wide range of services, including brand design,
-              programming and teaching.
+              Here are some of the projects that I&apos;ve created to learn new
+              technologies and skills:
             </p>
           </div>
           <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap">
             <div className="basis-1/3 flex-1 ">
               <Image
+                alt=""
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -160,6 +168,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -169,6 +178,7 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
@@ -178,29 +188,12 @@ export default function Home() {
             </div>
             <div className="basis-1/3 flex-1">
               <Image
+                alt=""
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
                 layout="responsive"
                 src={web4}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web5}
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <Image
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                src={web6}
               />
             </div>
           </div>
