@@ -6,10 +6,9 @@
     "dev": "next dev",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && next export"
+    "build": "next build"
   },
   "dependencies": {
-    "firebase": "^9.10.0",
     "moment": "^2.29.4",
     "next": "15.5.28",
     "react": "19.3.1",
