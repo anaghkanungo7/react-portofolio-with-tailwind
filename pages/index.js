@@ -14,7 +14,7 @@ import code from "../public/code.png";
 import design from "../public/design.png";
 // import consulting from "../public/consulting.png";
 import gear from "../public/gear.png";
-import Image from "next/Image";
+import Image from "next/image";
 import web1 from "../public/web1.jpg";
 import web2 from "../public/web2.jpg";
 import web3 from "../public/web3.jpg";
